@@ -4,3 +4,19 @@ Wed 27 Mar 2024 06:37:50 PM UTC:
  tests:  1|5
 total_score: 10/70
 acbcfc4
+Wed 27 Mar 2024 06:46:35 PM UTC: 
+ list.c | 11 +++++------
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createNode’:
+list.c:24:12: error: ‘Node’ has no member named ‘head’
+   24 |     newNode->head = NULL;
+      |            ^~
+list.c:25:12: error: ‘Node’ has no member named ‘tail’
+   25 |     newNode->tail = NULL;
+      |            ^~
+list.c:26:12: error: ‘Node’ has no member named ‘current’
+   26 |     newNode->current = NULL;
+      |            ^~
+Compilation failed
+32a53fe
