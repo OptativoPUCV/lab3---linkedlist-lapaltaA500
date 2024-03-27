@@ -21,20 +21,20 @@ typedef List List;
 
 Node * createNode(void * data) {
     Node * newNode = (Node *)malloc(sizeof(Node));
-    newNode->head = NULL;
-    newNode->tail = NULL;
-    newNode->current = NULL;
-    return newNode;
+    assert(new != NULL);
+    new->data = data;
+    new->prev = NULL;
+    new->next = NULL;
+    return new;
 }
 
 List * createList() 
 {
-  List *new = (List *)malloc(sizeof(List));
-  assert(new != NULL);
-  new->head = NULL;
-  new->tail = NULL;
-  new->current = NULL;
-  return new;
+  List *newNode = (List *)malloc(sizeof(List));
+  newNode->head = NULL;
+  newNode->tail = NULL;
+  newNode->current = NULL;
+  return newNode;
 }
 
 void * firstList(List * list) {
