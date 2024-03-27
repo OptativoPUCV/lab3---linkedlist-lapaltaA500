@@ -88,3 +88,17 @@ Wed 27 Mar 2024 07:10:53 PM UTC:
  tests:  10|2
 total_score: 45/70
 16e88f1
+Wed 27 Mar 2024 07:11:51 PM UTC: 
+ list.c | 2 --
+ 1 file changed, 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:77:3: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+   77 |   else
+      |   ^~~~
+list.c:79:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+   79 |     list->head->prev = newNode;
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3505517
